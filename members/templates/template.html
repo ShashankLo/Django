@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{% static 'myglobal.css' %}">
+<boddy/>
+{% for x in fruits %}
+    <h1> {{ x }} </h1>
+{%endfor%}
+<p>In myglobal.css you cam see what the stylesheet loks like.</p>
+</body>
+</html>
+
+{% comment %} <!DOCTYPE html>
+<html>
+    <body>
+        <p>The Queryset object:</p>
+        {{mymembers}}
+        <p>Loop through the items:</p>
+        
+        <table border='1'>
+            <tr>
+                <th>ID</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+            </tr>
+            {% for x in mymembers %}
+            <tr>
+                <td>{{x.id}}</td>
+                <td>{{x.firstname}}</td>
+                <td>{{x.lastname}}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+        <p>In views.py you can see how to imoprt and fetch members from the database.</p>
+    </body>
+</html>
+ {% endcomment %}
+
+
